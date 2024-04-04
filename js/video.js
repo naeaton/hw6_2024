@@ -73,11 +73,7 @@ document.getElementById("orig").addEventListener("click", function() {
 
 function updateVolumeInfo() {
     var volumeInfo = document.getElementById("volume");
-    if (video.muted) {
-        volumeInfo.textContent = "Muted";
-    } else {
-        volumeInfo.textContent = (video.volume * 100).toFixed(0) + "%";
-    }
+    volumeInfo.textContent = (video.volume * 100) + "%";
 }
 
 
